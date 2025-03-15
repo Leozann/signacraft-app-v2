@@ -1,19 +1,33 @@
-# Signacraft Documentation
 
- _____ _                                   __ _            _____  _____  
+
+ <!-- _____ _                                   __ _            _____  _____  
 /  ___(_)                                 / _| |          / __  \|  _  | 
 \ `--. _  __ _ _ __   __ _  ___ _ __ __ _| |_| |_  __   __`' / /'| |/' | 
  `--. \ |/ _` | '_ \ / _` |/ __| '__/ _` |  _| __| \ \ / /  / /  |  /| | 
 /\__/ / | (_| | | | | (_| | (__| | | (_| | | | |_   \ V / ./ /___\ |_/ / 
 \____/|_|\__, |_| |_|\__,_|\___|_|  \__,_|_|  \__|   \_(_)\_____(_)___/  
           __/ |                                                          
-         |___/                                                           
+         |___/ 
+                                                                   -->
+# Signacraft Documentation
 
 ## App Information
 
 ## Getting Started
 
 ## Release Notes
+
+UPDATE RELEASE NOTE Signacraft v.2.0:
+
+Major Updates:
+[NEW] Migration to a new tech stack for an enhanced developer experience.
+[NEW] Compatibility with the latest version of Safari.
+[NEW] Support for tablet and mobile view for improved device compatibility.
+[UPDATE] Simplified and cleaner layout using advanced layering techniques.
+[NEW] Embedded user documentation for better guidance.
+[UPDATE] Revamped error handling UI for a more intuitive user experience.
+[NEW] Developer documentation added, including flow analytics for easier maintenance and readability.
+[PENDING] New input field feature for signature templates (coming soon).
 
 <!-- This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
