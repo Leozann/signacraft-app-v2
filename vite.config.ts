@@ -14,5 +14,9 @@ export default defineConfig({
     strictPort: true,
     host: 'localhost',
     open: true,
+  },
+  build: {
+    outDir: 'dist', // Ensure the output folder is correctly set
+    emptyOutDir: true, // Remove old files before building
   }
 })
