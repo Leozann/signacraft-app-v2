@@ -1,0 +1,12 @@
+.blurBackgroundDesktop {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}

@@ -1,0 +1,11 @@
+.button {
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: calc(100%);
+    border: 1px solid transparent;
+    color: #FFEEFF;
+    transition: border-color 0.25s;
+}

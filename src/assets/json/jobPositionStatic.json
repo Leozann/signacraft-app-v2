@@ -1,0 +1,106 @@
+[
+    {
+        "value": 1,
+        "label": "Chief Executive Officer"
+    },
+    {
+        "value": 2,
+        "label": "Chief Marketing Officer"
+    },
+    {
+        "value": 3,
+        "label": "Chief Finance Officer"
+    },
+    {
+        "value": 4,
+        "label": "Chief Operating Officer"
+    },
+    {
+        "value": 5,
+        "label": "QHSE Asst. Manager"
+    },
+    {
+        "value": 6,
+        "label": "HR/GA Manager"
+    },
+    {
+        "value": 7,
+        "label": "Acc & Tax Manager"
+    },
+    {
+        "value": 8,
+        "label": "Corporate Legal"
+    },
+    {
+        "value": 9,
+        "label": "HR Marine Strategic Manager"
+    },
+    {
+        "value": 10,
+        "label": "Crewing Manager"
+    },
+    {
+        "value": 11,
+        "label": "Compliance Supervisor"
+    },
+    {
+        "value": 12,
+        "label": "Full Stack Developer"
+    },
+    {
+        "value": 13,
+        "label": "Acc & Tax Supervisor"
+    },
+    {
+        "value": 14,
+        "label": "Recruiter"
+    },
+    {
+        "value": 15,
+        "label": "Crew Change Coordinator"
+    },
+    {
+        "value": 16,
+        "label": "GA Staff"
+    },
+    {
+        "value": 17,
+        "label": "IT Support"
+    },
+    {
+        "value": 18,
+        "label": "Finance Staff"
+    },
+    {
+        "value": 19,
+        "label": "HR Marine & Strategic Staff"
+    },
+    {
+        "value": 20,
+        "label": "Crew Change Operation"
+    },
+    {
+        "value": 21,
+        "label": "Executive Assistant"
+    },
+    {
+        "value": 22,
+        "label": "UI/UX Designer"
+    },
+    {
+        "value": 23,
+        "label": "Social Media Specialist"
+    },
+    {
+        "value": 24,
+        "label": "Crew Change Support"
+    },
+    {
+        "value": 25,
+        "label": "Asst. Manager of Recruitment"
+    },
+    {
+        "value": 26,
+        "label": "HR Sr. Staff"
+    }
+]

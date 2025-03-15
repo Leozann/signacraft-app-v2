@@ -1,0 +1,48 @@
+.container {
+    height: 475px;
+}
+.wrapper {
+    margin-top: 1rem;
+    width: inherit;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.buttonSecondary {
+    background-color: #3D3B40;
+    color: #FFFEEF;
+    border: 1px solid;
+    border-color: rgba(255, 254, 239, 0.2);
+}
+
+.buttonSecondary:hover {
+    background-color: #353336;
+    border-color: rgba(255, 254, 239, 0.4);  
+};
+
+.buttonPrimary {
+    background-color: #684CC3;
+    color: #FFFEEF;
+    border: 1px solid transparent;
+}
+.buttonPrimary:hover {
+    background-color: #5E45B3;
+    border-color: #5438A1;  
+};
+
+.semVer {
+    margin: 0;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    opacity: 0.3;
+    p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: calc(100% - 2px);
+    }
+}

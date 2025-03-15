@@ -1,0 +1,18 @@
+.card {
+    width: auto;
+    min-width: 100px;
+    height: auto;
+    min-height: 100px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+
+    /* Background blur with fallback */
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); /* Safari */
+
+    /* Fallback for browsers that don't support backdrop-filter */
+    background: rgba(255, 255, 255, 0.3);
+}
