@@ -33,74 +33,90 @@
     },
     {
         "value": 9,
-        "label": "HR Marine Strategic Manager"
-    },
-    {
-        "value": 10,
         "label": "Crewing Manager"
     },
     {
-        "value": 11,
+        "value": 10,
         "label": "Compliance Supervisor"
     },
     {
-        "value": 12,
-        "label": "Full Stack Developer"
+        "value": 11,
+        "label": "Software Engineer"
     },
     {
-        "value": 13,
+        "value": 12,
         "label": "Acc & Tax Supervisor"
     },
     {
-        "value": 14,
+        "value": 13,
         "label": "Recruiter"
     },
     {
-        "value": 15,
+        "value": 14,
         "label": "Crew Change Coordinator"
     },
     {
-        "value": 16,
+        "value": 15,
         "label": "GA Staff"
     },
     {
-        "value": 17,
-        "label": "IT Support"
+        "value": 16,
+        "label": "IT Support Engineer"
     },
     {
-        "value": 18,
+        "value": 17,
         "label": "Finance Staff"
     },
     {
-        "value": 19,
+        "value": 18,
         "label": "HR Marine & Strategic Staff"
     },
     {
-        "value": 20,
+        "value": 19,
         "label": "Crew Change Operation"
     },
     {
-        "value": 21,
+        "value": 20,
         "label": "Executive Assistant"
     },
     {
-        "value": 22,
-        "label": "UI/UX Designer"
+        "value": 21,
+        "label": "Tech & Creative Support"
     },
     {
-        "value": 23,
+        "value": 22,
         "label": "Social Media Specialist"
     },
     {
-        "value": 24,
+        "value": 23,
         "label": "Crew Change Support"
     },
     {
+        "value": 24,
+        "label": "Recruitment & TA Manager"
+    },
+    {
         "value": 25,
-        "label": "Asst. Manager of Recruitment"
+        "label": "HR Sr. Staff"
     },
     {
         "value": 26,
-        "label": "HR Sr. Staff"
+        "label": "Fleet Manager"
+    },
+    {
+        "value": 27,
+        "label": "Finance Supervisor"
+    },
+    {
+        "value": 28,
+        "label": "Crew Training & TA Officer"
+    },
+    {
+        "value": 29,
+        "label": "Fleet Payroll Coordinator"
+    },
+    {
+        "value": 30,
+        "label": "Business Development & Commercial Manager"
     }
 ]
