@@ -118,5 +118,13 @@
     {
         "value": 30,
         "label": "Business Development & Commercial Manager"
+    },
+    {
+        "value": 31,
+        "label": "Recruitment Assistant" 
+    },
+    {
+        "value": 32,
+        "label": "Recruiter" 
     }
 ]
