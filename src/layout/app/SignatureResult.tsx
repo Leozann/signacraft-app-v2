@@ -76,10 +76,10 @@ function SignatureResult ({signatureData} : SignatureResultProps) {
         {/* <div ref={templateRef} style={{backgroundColor: "white", height: "auto"}}>
             <SignatureTemplate userSignatureData={signatureData}/>
         </div> */}
-{/* 
-        // <div ref={templateRef} style={{display: "none"}}>
-        //     <SignatureTemplate userSignatureData={signatureData}/>
-        // </div> */}
+
+        <div ref={templateRef} style={{display: "none"}}>
+            <SignatureTemplate userSignatureData={signatureData}/>
+        </div>
     </Fragment>
     );
 };
