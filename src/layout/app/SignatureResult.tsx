@@ -73,13 +73,13 @@ function SignatureResult ({signatureData} : SignatureResultProps) {
         </CardComponent>
 
         {/* hide the template component, only take the result as copy features */}
-        <div ref={templateRef} style={{backgroundColor: "white", height: "auto"}}>
-            <SignatureTemplate userSignatureData={signatureData}/>
-        </div>
-{/* 
-        <div ref={templateRef} style={{display: "none"}}>
+        {/* <div ref={templateRef} style={{backgroundColor: "white", height: "auto"}}>
             <SignatureTemplate userSignatureData={signatureData}/>
         </div> */}
+{/* 
+        // <div ref={templateRef} style={{display: "none"}}>
+        //     <SignatureTemplate userSignatureData={signatureData}/>
+        // </div> */}
     </Fragment>
     );
 };

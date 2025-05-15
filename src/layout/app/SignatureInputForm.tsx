@@ -57,7 +57,7 @@ function SignatureInputForm({onSuccessSubmit}: SignatureInputFormProps) {
         const isPhoneValid = InputValidation("inputPhoneNumber", inputValue.phone);
 
         if (isFullNameValid && isEmailValid && isJobPositionValid && isPhoneValid) {
-            console.log(inputValue);
+            // console.log(inputValue);
             onSuccessSubmit(inputValue);
         } else {
             setIsError({
