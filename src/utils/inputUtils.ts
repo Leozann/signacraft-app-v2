@@ -51,4 +51,13 @@ function PhoneNumberFormat (inputType: string, inputValue: string) {
     return inputValue;
 };
 
-export { InputValidation, InputFieldVisualization, SanitizeInputValue, PhoneNumberFormat };
+function InputFormat(inputType: string, inputValue: string) {
+    if (inputType === "capitalize") {
+        return inputValue.toLowerCase().split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+    }else {
+        console.warn("Invalid convert data")
+    };
+    return "";
+}
+
+export { InputValidation, InputFieldVisualization, SanitizeInputValue, PhoneNumberFormat, InputFormat };

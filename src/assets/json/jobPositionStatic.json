@@ -126,5 +126,13 @@
     {
         "value": 32,
         "label": "Recruiter" 
+    },
+    {
+        "value": 33,
+        "label": "Training Manager"
+    },
+    {
+        "value": 34,
+        "label": "Training Coordinator"
     }
 ]
