@@ -14,6 +14,7 @@ interface FormDataIncludes {
     email: string;
     jobPosition: string;
     phone: string;
+    template: string;
 };
 
 interface SignatureInputFormProps {
