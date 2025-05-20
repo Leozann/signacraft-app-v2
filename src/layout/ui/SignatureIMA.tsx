@@ -14,7 +14,7 @@ interface SignatureTemplateProps {
 function SignatureIMA ({userSignatureData}:SignatureTemplateProps) {
     return(
         <Fragment>
-            <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '10pt' }}>Best Regards,<br /><br /></span>
+            <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '10pt' }}>With Best Regards,<br /><br /></span>
             <table cellSpacing="0" cellPadding="0" border={0} style={{ fontFamily: 'Arial, sans-serif', fontSize: '10pt' }}>
                 <tbody>
                     <tr>
