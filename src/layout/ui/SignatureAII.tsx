@@ -15,7 +15,7 @@ function SignatureAII({ userSignatureData }: SignatureTemplateProps) {
             <tbody>
                 <tr>
                     <td>
-                        <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '12pt' }}>
+                        <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '11pt' }}>
                             With Best Regards,<br /><br />
                         </span>
                         <table
@@ -26,10 +26,10 @@ function SignatureAII({ userSignatureData }: SignatureTemplateProps) {
                         >
                             <tbody>
                                 <tr>
-                                    <td style={{ fontSize: '12pt', color: '#1B1C1E', paddingLeft: '5px', lineHeight: '1.1' }}>
-                                    <span style={{ fontWeight: 'bold', fontSize: '12pt', color: '#1E1364' }}>{userSignatureData.fullName}</span><br />
-                                    <span style={{ fontSize: '12pt', color: '#1E1364' }}>{userSignatureData.jobPosition}</span><br />
-                                    <span style={{ fontSize: '12pt', color: '#1B1C1E' }}>
+                                    <td style={{ paddingLeft: '5px', lineHeight: '1.1' }}>
+                                    <span style={{ fontWeight: 'bold', fontSize: '10pt', color: '#1E1364', letterSpacing: '-0.3px'}}>{userSignatureData.fullName}</span><br />
+                                    <span style={{ fontSize: '10pt', color: '#1E1364', letterSpacing: '-0.3px' }}>{userSignatureData.jobPosition}</span><br />
+                                    <span style={{ fontSize: '10pt', color: '#1B1C1E', letterSpacing: '-0.3px'}}>
                                         <strong>O.</strong>&nbsp;
                                         <a href="tel:+622138250011" style={{ color: '#1B1C1E', textDecoration: 'none' }}>
                                         +62&nbsp;21&nbsp;38250011
@@ -39,7 +39,7 @@ function SignatureAII({ userSignatureData }: SignatureTemplateProps) {
                                         {userSignatureData.phone}
                                         </a>
                                     </span><br />
-                                    <span style={{ fontSize: '12pt', color: '#1B1C1E' }}>
+                                    <span style={{ fontSize: '10pt', color: '#1B1C1E', letterSpacing: '-0.3px' }}>
                                         <strong>E.</strong>&nbsp;
                                         <a href={`mailto:${userSignatureData.email}`} style={{ color: '#1E1364' }}>
                                         {userSignatureData.email}
@@ -76,17 +76,18 @@ function SignatureAII({ userSignatureData }: SignatureTemplateProps) {
                                                     <td
                                                     style={{
                                                         fontWeight: 'bold',
-                                                        fontSize: '10pt',
+                                                        fontSize: '9pt',
                                                         color: '#1B1C1E',
                                                         whiteSpace: 'nowrap',
+                                                        letterSpacing: '-0.3px'
                                                     }}
                                                     >
                                                     AUGUSTEA INTCREWS&nbsp;
-                                                    <span style={{ color: '#1B1C1E', fontWeight: 'lighter' }}>INDONESIA</span>
+                                                    <span style={{ color: '#1B1C1E', fontWeight: 'lighter', letterSpacing: '-0.3px' }}>INDONESIA</span>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td style={{ fontSize: '10pt', color: '#666666', whiteSpace: 'nowrap', lineHeight: '1', paddingBottom: '5px'}}>
+                                                    <td style={{ fontSize: '9pt', color: '#666666', whiteSpace: 'nowrap', lineHeight: '1', paddingBottom: '5px', letterSpacing: '-0.3px'}}>
                                                     Navigated By People
                                                     </td>
                                                 </tr>
@@ -131,19 +132,23 @@ function SignatureAII({ userSignatureData }: SignatureTemplateProps) {
                                 </tr>
                             </tbody>
                         </table>
-                        <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '12pt', fontWeight: 'bold', margin: '0', color: '#1B1C1E', lineHeight: '1.1' }}>
+                        {/* <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '10pt', fontWeight: 'bold', margin: '0', color: '#1B1C1E', lineHeight: '1.1' }}>
                             Confidentiality Notes:
                         </p>
-                        <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '12pt', margin: '0', color: '#1B1C1E', lineHeight: '1.1' }}>
+                        <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '10pt', margin: '0', color: '#1B1C1E', lineHeight: '1.1' }}>
                             This email may contain confidential and/or private information.
                         </p>
-                        <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '12pt', margin: '0', color: '#1B1C1E', lineHeight: '1.1' }}>
+                        <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '10pt', margin: '0', color: '#1B1C1E', lineHeight: '1.1' }}>
                             If you have received this email in error, please delete the message and notify the senders or{' '}
                             <a href="https://g.co/kgs/FiqBTxA" target="_blank" rel="noopener noreferrer" style={{ color: '#99005D' }}>
                             complaint
                             </a>
                             .
-                        </p>
+                        </p> */}
+
+                        <p style={{ fontSize: '8pt', fontWeight: 'bold', margin: 0, color: '#1B1C1E', lineHeight: 1.1 }}>Confidentiality Notes:</p>
+                        <p style={{ fontSize: '7pt', fontWeight: 'bold', margin: 0, color: '#1B1C1E', lineHeight: 1.1 }}>This email may contain confidential and/or private information.</p>
+                        <p style={{ fontSize: '7pt', fontWeight: 'bold', margin: 0, color: '#1B1C1E', lineHeight: 1.1 }}>If received in error, please delete it and notify the senders or&nbsp;<a href="https://forms.gle/dR5d8hG127kTiNWs8" target="_blank" rel="noopener noreferrer" style={{ color: '#99005D' }}>complaint</a>.</p>
                     </td>
                 </tr>
             </tbody>

@@ -36,7 +36,7 @@ function SignatureTemplate ({ userSignatureData }: SignatureTemplateProps) {
     return (
       <Fragment>
         <blockquote style={{fontFamily: "Arial, sans-serif", fontSize: "8pt", borderLeft: "4px solid #04AA6D", paddingLeft:"10px", margin:"0",lineHeight: "1.2", letterSpacing: "-0.4px"}}>
-        Use <strong>Arial</strong> font with a <strong>10pt</strong> font size for the email body.<br/>
+        Use <strong>Arial</strong> font with a <strong>11pt</strong> font size for the email body.<br/>
         If the listed job title does not apply to you, kindly contact the <strong>IT Department</strong> for assistance.<br/><strong>NOTE: Delete this message before saving your signature, with Best Regards at the start.</strong> 
         </blockquote>
         <br/>
