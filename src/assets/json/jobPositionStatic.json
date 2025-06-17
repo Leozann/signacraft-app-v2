@@ -21,7 +21,7 @@
     },
     {
         "value": 6,
-        "label": "HR/GA Manager"
+        "label": "HR & GA Manager"
     },
     {
         "value": 7,
@@ -134,5 +134,13 @@
     {
         "value": 34,
         "label": "Training Coordinator"
+    },
+    {
+        "value": 35,
+        "label": "R&D Asst. Manager"
+    },
+    {
+        "value": 36,
+        "label": "HR & GA Asst. Manager"
     }
 ]
