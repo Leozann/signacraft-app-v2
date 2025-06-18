@@ -14,7 +14,7 @@ interface SignatureTemplateProps {
 function SignatureIMA ({userSignatureData}:SignatureTemplateProps) {
     return(
         <Fragment>
-            <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '10pt' }}>With Best Regards,<br /><br /></span>
+            <span style={{ fontFamily: 'Arial, sans-serif', fontSize: '10pt' }}>With best regards,<br /><br /></span>
             <table cellSpacing="0" cellPadding="0" border={0} style={{ fontFamily: 'Arial, sans-serif', fontSize: '10pt' }}>
                 <tbody>
                     <tr>
@@ -22,7 +22,7 @@ function SignatureIMA ({userSignatureData}:SignatureTemplateProps) {
                             <table cellSpacing="0" cellPadding="0" border={0} width={"450pt"} style={{ fontFamily: 'Arial, sans-serif', color: "#365992"}}>
                                 <tbody>
                                     <tr>
-                                        <td align="left">
+                                        <td align="left" width={"175pt"}>
                                             &nbsp; {/* spacer */}
                                             <img src="https://i-mitrastrategis.com/images/e-signature/ima-company/logo_primary.png" alt="company" style={{ maxWidth: '175px', height: 'auto', paddingRight: '5px' }}/>
                                         </td>
