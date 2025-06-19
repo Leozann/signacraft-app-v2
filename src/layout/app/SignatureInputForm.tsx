@@ -82,7 +82,7 @@ function SignatureInputForm({onSuccessSubmit}: SignatureInputFormProps) {
         } else if (inputId === "email") {
             inputValue = SanitizeInputValue("inputForEmail", inputValue) || "";
         } else if (inputId === "jobPosition") {
-            const filterInput = SanitizeInputValue("inputForText", inputValue) || "";
+            const filterInput = SanitizeInputValue("inputForJobTitle", inputValue) || "";
             const findOption = jobPositionMapping.find((opt) => opt.value === filterInput);
             const result = findOption ? findOption.label : filterInput;
             inputValue = result;

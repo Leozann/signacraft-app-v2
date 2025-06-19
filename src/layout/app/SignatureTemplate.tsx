@@ -1,6 +1,7 @@
 import { Fragment } from "react/jsx-runtime";
 import SignatureAII from "../ui/SignatureAII";
 import SignatureIMA from "../ui/SignatureIMA";
+import { InputFormat } from "../../utils/inputUtils";
 
 interface UserSignatureData {
   fullName: string;
@@ -15,14 +16,24 @@ interface SignatureTemplateProps {
 }
 
 function SignatureTemplate ({ userSignatureData }: SignatureTemplateProps) {
+  const updateSignatureName = (fullName : string):string => {
+    
+    return InputFormat("fullNameAbbreviation", fullName);
+  };
+
+  const formattedSignatureData : UserSignatureData = {
+    ...userSignatureData,
+    fullName: updateSignatureName(userSignatureData.fullName),
+  };
     const GenerateTemplate = (templateName: string) => {
+      console.log(formattedSignatureData);
       switch (templateName) {
         case "AII":
-          return <SignatureAII userSignatureData={userSignatureData} />;
+          return <SignatureAII userSignatureData={formattedSignatureData} />;
         // case "IMS":
         //   return;
         case "IMA":
-          return <SignatureIMA userSignatureData={userSignatureData} />;
+          return <SignatureIMA userSignatureData={formattedSignatureData} />;
       };
       console.log(templateName);
     }

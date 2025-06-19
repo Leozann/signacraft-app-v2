@@ -1,6 +1,6 @@
 function InputValidation ( inputType: string, inputValue: string) {
     if (inputType === "inputUserName"){
-        const userNameRegex = /^[a-zA-Z\s]{3,30}$/; // allow only letters (both uppercase and lowercase), 3 to 30 characters
+        const userNameRegex = /^[a-zA-Z\s]{3,40}$/; // allow only letters (both uppercase and lowercase), 3 to 40 characters
         return userNameRegex.test(inputValue);
     } else if (inputType === "inputUserEmail"){
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // standard email format
@@ -24,8 +24,14 @@ function SanitizeInputValue(inputType: string, inputValue: string) {
         let filteredValue = inputValue.replace(/[^a-zA-Z\s]/g, ""); 
         if (filteredValue.length > 0 && filteredValue[0] === " ") {
             filteredValue = filteredValue.trimStart();
-        }
+        };
         return filteredValue.replace(/\s{2,}/g, " "); // prevent multiple space between words
+    } else if (inputType === "inputForJobTitle") { // same as inputForText but allow punctuation
+        let filteredValue = inputValue.replace(/[^a-zA-Z\s.,&]/g, "");
+        if (filteredValue.length > 0 && filteredValue[0] === " ") {
+            filteredValue = filteredValue.trimStart();
+        };
+        return filteredValue.replace(/\s{2,}/g, " ");
     } else if (inputType === "inputForEmail") { // trim to before sanitization 
         const trimmedValue = inputValue.trim();
         return trimmedValue.replace(/[^a-zA-Z0-9@._-]/g, ""); // allow text, punctuation
@@ -54,8 +60,21 @@ function PhoneNumberFormat (inputType: string, inputValue: string) {
 function InputFormat(inputType: string, inputValue: string) {
     if (inputType === "capitalize") {
         return inputValue.toLowerCase().split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
-    }else {
-        console.warn("Invalid convert data")
+    } else if (inputType ==="fullNameAbbreviation") {
+        const userFullName = inputValue.trim().split(/\s+/);
+        if (userFullName.length === 1) {
+            return userFullName[0];
+        } else if (userFullName.length === 2) {
+            return userFullName.join(" ");
+        } else {
+            const firstName = userFullName[0];
+            const lastName = userFullName[userFullName.length - 1];
+            const middleName = userFullName.slice(1, -1);
+            const abbreviationName = middleName.map(name => name.charAt(0).toUpperCase() + ".").join(" ");
+            return `${firstName} ${abbreviationName} ${lastName}`;
+        }
+    } else {
+        console.warn("Invalid convert data");
     };
     return "";
 }
