@@ -126,5 +126,9 @@
     {
         "value": 32,
         "label": "IT Staff"
+    },
+    {
+        "value": 33,
+        "label": "Receptionist"
     }
 ]
