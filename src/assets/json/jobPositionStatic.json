@@ -130,5 +130,9 @@
     {
         "value": 33,
         "label": "Receptionist"
+    },
+    {
+        "value": 34,
+        "label": "Crewing Team Leader"
     }
 ]
