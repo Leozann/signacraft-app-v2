@@ -1,11 +1,12 @@
 interface IconProps {
     iconType?: string;
     iconClass?: string;
+    iconClickFunction?: ()=> void
 };
 
-function IconComponent ({iconType = "react", iconClass=""}: IconProps) {
+function IconComponent ({iconType = "react", iconClass="", iconClickFunction}: IconProps) {
     return(
-        <i className={`lni lni-${iconType} ${iconClass}`}/>
+        <i className={`lni lni-${iconType} ${iconClass}`} onClick={iconClickFunction}/>
     );
     
 };

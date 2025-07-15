@@ -78,10 +78,10 @@ function MainPage() {
                 <div className={MainPageStyles.callToAction}>
                     <Outlet/>
                 </div>
-                <FooterComponent/>
             </div>
             
         </CenteredLayout>
+        <FooterComponent/>
     </BlurredBackground>
     )
 };

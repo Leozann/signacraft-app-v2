@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    gap: 10px;
+
+    input {
+        width: 40px;
+        text-align: center;
+        color: white;
+        font-size: calc(100% - 5px);
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #3D3B40;
+        padding-bottom: .3rem;
+    }
+
+    input:focus {
+        outline: none;
+        border-bottom: 1px solid #684CC3;
+        ;
+    }
+}

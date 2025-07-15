@@ -17,17 +17,19 @@
 
 ## Release Notes
 
-UPDATE RELEASE NOTE Signacraft v.2.0:
+UPDATE RELEASE NOTE Signacraft v.2.2.8:
 
-Major Updates:
-[NEW] Migration to a new tech stack for an enhanced developer experience.
-[NEW] Compatibility with the latest version of Safari.
-[NEW] Support for tablet and mobile view for improved device compatibility.
-[UPDATE] Simplified and cleaner layout using advanced layering techniques.
-[NEW] Embedded user documentation for better guidance.
-[UPDATE] Revamped error handling UI for a more intuitive user experience.
-[NEW] Developer documentation added, including flow analytics for easier maintenance and readability.
-[PENDING] New input field feature for signature templates (coming soon).
+### Major Updates
+
+### Minor Improvements & Fixes
+[New] Implemented improved security measures using product keys</br>
+[New] Add pop-up message behavior with smoother animations</br>
+[Update] Job position database</br>
+[Update] Enhanced user experience for employee name input</br>
+[Fix] Resolved UI bug in the Main Page</br>
+[Fix] Resolved UI bug in the footer</br>
+<!-- [Update] Improved usability of the employee phone number input. -->
+
 
 <!-- This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

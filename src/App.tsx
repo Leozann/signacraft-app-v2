@@ -1,14 +1,11 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './assets/styles/App.scss'
+import './assets/styles/App.scss';
 
 // import all components
-import MainPage from './pages/MainPage'
-// import SignatureInputForm from "./layout/app/SignatureInputForm";
+import MainPage from './pages/MainPage';
 import StartButton from "./layout/app/StartButton";
 import SignatureX from "./layout/app/SignatureX";
+// import SignatureKeyPage from "./pages/SignatureKeyPage";
 
 function App() {
   // routes configuration
@@ -19,9 +16,10 @@ function App() {
           <Route path="/" element={<StartButton/>} />
           <Route path="/signature" element={<SignatureX/>} />
         </Route>
+        {/* <Route path="/admin/signature-key" element={<SignatureKeyPage/>} /> */}
       </Routes>
     </Router>
   )
 }
 
-export default App
+export default App;

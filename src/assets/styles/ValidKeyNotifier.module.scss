@@ -1,0 +1,71 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    .successIcon {
+        font-size: calc(100% + 5px);
+        color: #0EDD5D;
+    }
+
+    .failureIcon {
+        font-size: calc(100% + 5px);
+        color: #D62323;
+    }
+
+    p {
+        margin: 0;
+        font-size: calc(100% - 4px);
+    }
+}
+
+.container {
+    width: 100px;
+    display: flex;
+    align-items: center;
+
+    .loadText {
+        margin: 0;
+        margin-left: .6rem;
+        font-size: calc(100% - 4px);
+        text-align: start;
+        letter-spacing: 1.3px;
+
+        .dots {
+            letter-spacing: 1.5px;
+        }
+    }
+}
+
+.animateEnter {
+    animation: fadeInUp 0.3s ease-out;
+}
+
+.animateExit {
+    animation: fadeOutDown 0.3s ease-in;
+}
+
+// animations
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+}

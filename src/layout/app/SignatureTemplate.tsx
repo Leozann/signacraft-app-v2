@@ -1,7 +1,7 @@
 import { Fragment } from "react/jsx-runtime";
 import SignatureAII from "../ui/SignatureAII";
 import SignatureIMA from "../ui/SignatureIMA";
-import { InputFormat } from "../../utils/inputUtils";
+import { InputFormat } from "../../function/utils/inputUtils";
 
 interface UserSignatureData {
   fullName: string;

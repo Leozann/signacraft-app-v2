@@ -16,7 +16,7 @@ export default defineConfig({
     open: true,
   },
   build: {
-    outDir: 'build', // Ensure the output folder is correctly set
+    outDir: 'build',
     emptyOutDir: true, // Remove old files before building
   }
 })

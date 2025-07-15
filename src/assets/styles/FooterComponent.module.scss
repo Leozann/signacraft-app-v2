@@ -6,19 +6,23 @@
     margin: 0;
     margin-top: auto;
     margin-top: 1.5rem;
-    
-    a,p,span {
+
+    a,
+    p,
+    span {
         font-size: calc(100% - 4px);
         color: #FFEEFF;
         opacity: 0.8;
     }
 }
 
-.displayFlex{
+.displayFlex {
     width: inherit;
+    height: 100%;
     display: flex;
     margin: 0;
-    padding: 1rem 2rem;   
+    padding: 0rem 2rem;
+    margin: 1rem 0rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -28,12 +32,12 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    
+
     a {
         opacity: 0.6;
         text-decoration: none;
     }
-    
+
     a:hover {
         opacity: 0.8;
     }

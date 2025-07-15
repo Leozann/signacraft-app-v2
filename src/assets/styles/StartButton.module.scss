@@ -1,6 +1,6 @@
-.container {
-    height: 475px;
-}
+// .container {
+//     height: 475px;
+// }
 .wrapper {
     margin-top: 1rem;
     width: inherit;
@@ -20,18 +20,23 @@
 
 .buttonSecondary:hover {
     background-color: #353336;
-    border-color: rgba(255, 254, 239, 0.4);  
-};
+    border-color: rgba(255, 254, 239, 0.4);
+}
+
+;
 
 .buttonPrimary {
     background-color: #684CC3;
     color: #FFFEEF;
     border: 1px solid transparent;
 }
+
 .buttonPrimary:hover {
     background-color: #5E45B3;
-    border-color: #5438A1;  
-};
+    border-color: #5438A1;
+}
+
+;
 
 .semVer {
     margin: 0;
@@ -39,6 +44,7 @@
     margin-bottom: 0.5rem;
     padding: 0;
     opacity: 0.3;
+
     p {
         margin: 0;
         padding: 0;

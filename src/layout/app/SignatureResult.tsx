@@ -65,6 +65,8 @@ function SignatureResult ({signatureData} : SignatureResultProps) {
                 <div className={SignatureResultStyles.displayFlex}>
                     <div className={SignatureResultStyles.platform}>
                         <IconComponent iconType="chrome" iconClass={SignatureResultStyles.icon}/>
+                        {/* <IconComponent iconType="phone" iconClass={SignatureResultStyles.icon}/> */}
+                        {/* <IconComponent iconType="laptop-2" iconClass={SignatureResultStyles.icon}/> */}
                         <p>{clipboardName}</p>
                     </div>
                     <ButtonComponent buttonClass={SignatureResultStyles.buttonPrimary} buttonType="button" buttonClickFunction={CopyResultHandler}>copy</ButtonComponent>

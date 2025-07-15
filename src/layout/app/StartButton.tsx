@@ -19,11 +19,11 @@ function StartButton () {
     return(
         <div className={StartButtonStyles.container}>
             <div className={StartButtonStyles.wrapper}>
-                <ButtonComponent buttonClass={StartButtonStyles.buttonSecondary} buttonType="button" buttonClickFunction={() => NavigateUserActionHandler("guide")}>User Guide</ButtonComponent>
-                <ButtonComponent buttonClass={StartButtonStyles.buttonPrimary} buttonType="button" buttonClickFunction={()=> NavigateUserActionHandler("start")}>Start Now</ButtonComponent>
+                <ButtonComponent buttonClass={`${StartButtonStyles.buttonSecondary} user-select-none`} buttonType="button" buttonClickFunction={() => NavigateUserActionHandler("guide")}>User Guide</ButtonComponent>
+                <ButtonComponent buttonClass={`${StartButtonStyles.buttonPrimary} user-select-none`} buttonType="button" buttonClickFunction={()=> NavigateUserActionHandler("start")}>Start Now</ButtonComponent>
             </div>
             <div className={`${StartButtonStyles.semVer} user-select-none`}>
-                <p>Signacraft v2.0.0</p>
+                <p>Signacraft v2.2.2</p>
             </div>
         </div>
     );
