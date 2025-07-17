@@ -24,7 +24,6 @@ interface SignatureInputFormProps {
 };
 
 function SignatureInputForm({onSuccessSubmit}: SignatureInputFormProps) {
-
     const {inputValue, isError, isModalOpen, formData, InputChangeHandler, CloseModalHandler ,SubmitDataHandler, SubmitAfterKeyVerifiedHandler, jobPositionMapping, signatureTemplateMapping,} =  UseSignatureInputFormHooks(onSuccessSubmit);
 
 

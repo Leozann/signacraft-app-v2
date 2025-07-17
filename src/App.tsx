@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<MainPage/>}> {/* nested routes */}
-          <Route path="/" element={<StartButton/>} />
+          <Route index element={<StartButton/>} />
           <Route path="/signature" element={<SignatureX/>} />
         </Route>
         {/* <Route path="/admin/signature-key" element={<SignatureKeyPage/>} /> */}
