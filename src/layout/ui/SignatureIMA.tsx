@@ -24,7 +24,7 @@ function SignatureIMA ({userSignatureData}:SignatureTemplateProps) {
                                     <tr>
                                         <td align="left" width={"175"}>
                                             &nbsp; {/* spacer */}
-                                            <img src="https://i-mitrastrategis.com/images/e-signature/ima-company/logo_primary.png" width={"175"} height="auto" alt="company" style={{ maxWidth: '175px', height: 'auto', paddingRight: '5px' }}/>
+                                            <img src="https://i-mitrastrategis.com/images/e-signature/ima-company/logo_primary.png" {...{ border: "0" }} alt="company" style={{ width: '175px', paddingRight: '5px' }}/>
                                         </td>
                                     </tr>
 
