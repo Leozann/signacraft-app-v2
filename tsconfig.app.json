@@ -23,7 +23,7 @@
     "noUncheckedSideEffectImports": true,
 
     /* test mode */
-    "types": ["vitest"]
+    // "types": ["vitest"]
   },
   "include": ["src"]
 }
