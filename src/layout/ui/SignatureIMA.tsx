@@ -19,17 +19,17 @@ function SignatureIMA ({userSignatureData}:SignatureTemplateProps) {
                 <tbody>
                     <tr>
                         <td>
-                            <table cellSpacing="0" cellPadding="0" border={0} width={"450pt"} style={{ fontFamily: 'Arial, sans-serif', color: "#365992"}}>
+                            <table cellSpacing="0" cellPadding="0" border={0} width={"450"} style={{ fontFamily: 'Arial, sans-serif', color: "#365992"}}>
                                 <tbody>
                                     <tr>
-                                        <td align="left" width={"175pt"}>
+                                        <td align="left" width={"175"}>
                                             &nbsp; {/* spacer */}
-                                            <img src="https://i-mitrastrategis.com/images/e-signature/ima-company/logo_primary.png" alt="company" style={{ maxWidth: '175px', height: 'auto', paddingRight: '5px' }}/>
+                                            <img src="https://i-mitrastrategis.com/images/e-signature/ima-company/logo_primary.png" width={"175"} height="auto" alt="company" style={{ maxWidth: '175px', height: 'auto', paddingRight: '5px' }}/>
                                         </td>
                                     </tr>
 
                                     <tr>
-                                        <td colSpan={2} width={"250pt"} height="5" style={{ borderBottom: '1px solid #888888'}}>
+                                        <td colSpan={2} width={"250"} height={"5"} style={{ borderBottom: '1px solid #888888'}}>
                                             <span>&nbsp;</span>
                                         </td>
                                     </tr>
@@ -41,7 +41,7 @@ function SignatureIMA ({userSignatureData}:SignatureTemplateProps) {
                                     </tr>
                                     <tr>
                                         {/* table for employee profile */}
-                                        <td width={"250pt"} style={{ paddingLeft: '5px', verticalAlign: 'top', lineHeight: 1 }}>
+                                        <td width={"250"} style={{ paddingLeft: '5px', verticalAlign: 'top', lineHeight: 1 }}>
 
                                             <span style={{ fontWeight: 'bold', fontSize: '9pt', whiteSpace: 'nowrap', letterSpacing: '-0.3px' }}>{userSignatureData.fullName}</span><br />
                                             <span style={{ fontSize: '9pt', letterSpacing: '-0.3px', paddingBottom: "15px"}}>{userSignatureData.jobPosition}</span><br />
@@ -106,21 +106,6 @@ function SignatureIMA ({userSignatureData}:SignatureTemplateProps) {
                                                                                 </tbody>
                                                                             </table>
                                                                         </td>
-                                                                        {/* {[
-                                                                            { url: 'https://i-maritimeacademy.com', icon: 'website_icon.png' },
-                                                                            { url: 'https://www.instagram.com/maritimeacademy.id', icon: 'instagram_icon.png' },
-                                                                            { url: 'https://www.tiktok.com/@maritimeacademy.id', icon: 'tiktok_icon.png' },
-                                                                            { url: 'https://www.linkedin.com/in/maratime-academy-973078364', icon: 'linkedIn_icon.png' },
-                                                                        ].map((item, index) => (
-                                                                            <td key={index} style={{ paddingRight: '3px' }}>
-                                                                                <a href={item.url} target="_blank" rel="noopener noreferrer">
-                                                                                    <img src={`https://i-mitrastrategis.com/images/e-signature/ima-company/${item.icon}`} alt={item.icon} width={17} height={17}/>
-                                                                                </a>
-                                                                            </td>
-                                                                        ))}
-                                                                        <td width="5">
-                                                                            <span>&nbsp;</span>
-                                                                        </td> */}
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
