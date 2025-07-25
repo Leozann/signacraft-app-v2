@@ -1,8 +1,3 @@
-// import { useState } from "react";
-// import { InputFormat, InputValidation, PhoneNumberFormat, SanitizeInputValue } from "../../function/utils/inputUtils";
-// import signatureTemplateJSON from "../../assets/json/companyTemplateStatic.json"
-// import jobPositionStaticJSON from "../../assets/json/jobPositionStatic.json"
-
 import CardComponent from "../../components/CardComponent";
 import InputGroupV2 from "./InputGroupV2";
 import ButtonComponent from "../../components/ButtonComponent";
@@ -10,6 +5,7 @@ import SelectGroup from "./SelectGroup";
 import SignatureInputFormStyles from "../../assets/styles/SignatureInputForm.module.scss"
 import SignatureVerification from "./SignatureVerification";
 import { UseSignatureInputFormHooks } from "../../function/hooks/useSignatureFormHooks";
+import SignatureInputInvalid from "./SignatureInputInvalid";
 
 interface FormDataIncludes {
     fullName: string;
@@ -24,7 +20,9 @@ interface SignatureInputFormProps {
 };
 
 function SignatureInputForm({onSuccessSubmit}: SignatureInputFormProps) {
-    const {inputValue, isError, isModalOpen, formData, InputChangeHandler, CloseModalHandler ,SubmitDataHandler, SubmitAfterKeyVerifiedHandler, jobPositionMapping, signatureTemplateMapping,} =  UseSignatureInputFormHooks(onSuccessSubmit);
+    // remove the useState and other imports to keep the component clean and focused on rendering
+    const {inputValue, isError, submitAlert, isModalOpen, formData, InputChangeHandler, CloseModalHandler ,SubmitDataHandler, SubmitAfterKeyVerifiedHandler, jobPositionMapping, signatureTemplateMapping,} =  UseSignatureInputFormHooks(onSuccessSubmit);
+
     return(
         <CardComponent cardClass={SignatureInputFormStyles.card}>
             <h5 className={`${SignatureInputFormStyles.header} user-select-none`} >SignatureX</h5>
@@ -40,8 +38,9 @@ function SignatureInputForm({onSuccessSubmit}: SignatureInputFormProps) {
                     {/* testing */}
                     {/* <button onClick={()=>{setIsModalOpen(true)}}>Open Modal</button> */}
                     {formData && (
-                        <SignatureVerification isOpen={isModalOpen} isClose={CloseModalHandler} onKeyVerified={SubmitAfterKeyVerifiedHandler}/>
+                        <SignatureVerification isOpen={isModalOpen} isClose={() => CloseModalHandler("verification")} onKeyVerified={SubmitAfterKeyVerifiedHandler}/>
                     )}
+                    <SignatureInputInvalid isAlert={submitAlert} isClose={() => CloseModalHandler("alert")} alertMessage="Just a little more to go! Check the red highlighted fields and update them to move forward"/>
             </form>
         </CardComponent>
     );

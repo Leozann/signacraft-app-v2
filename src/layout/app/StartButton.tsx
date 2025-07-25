@@ -23,7 +23,7 @@ function StartButton () {
                 <ButtonComponent buttonClass={`${StartButtonStyles.buttonPrimary} user-select-none`} buttonType="button" buttonClickFunction={()=> NavigateUserActionHandler("start")}>Start Now</ButtonComponent>
             </div>
             <div className={`${StartButtonStyles.semVer} user-select-none`}>
-                <p>Signacraft v2.2.2</p>
+                <p>Signacraft v2.2.5</p>
             </div>
         </div>
     );

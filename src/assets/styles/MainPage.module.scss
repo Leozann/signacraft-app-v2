@@ -1,30 +1,40 @@
-// .wrapper {
-//     display: flex;
-//     flex-direction: column;
-//     flex-grow: 1;
-//     min-height: 100%;
-// }
-
 .heading {
-    text-align: center;
-    cursor:default;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    cursor: default;
     transition: all 500ms ease-in;
 
-    h1 {
-        // margin: 0;   
-        letter-spacing: 1.1px;
+    .wrapper {
+        white-space: pr;
+        width: 450px;
+
+        h1,
+        h3 {
+            width: 305px;
+            white-space: pre;
+            text-align: left;
+            white-space: pre;
+            display: inline-block;
+        }
     }
 
-    h1:hover{
+    h1 {
+        letter-spacing: 1.1px;
+        white-space: pre;
+    }
+
+    h1:hover {
         transition: all 500ms ease-in;
         text-shadow: 5px 5px 30px #EF3DAB;
     }
 }
+
 .description {
     width: 100%;
     display: flex;
     justify-content: center;
-    
+
     p {
         text-align: center;
         width: 50%;
@@ -43,14 +53,34 @@
 @media (max-width: 480px) {
     .heading {
         text-align: center;
-        cursor:default;
+        cursor: default;
     }
 
     .description {
-        
+
         p {
             text-align: center;
             width: 79%;
         }
+    }
+}
+
+.cursorEffect {
+    display: inline-block;
+    width: 0.1ch;
+    animation: blink 1s steps(1) infinite;
+}
+
+// animations
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
     }
 }

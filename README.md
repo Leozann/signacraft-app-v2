@@ -17,7 +17,7 @@
 
 ## Release Notes
 
-UPDATE RELEASE NOTE Signacraft v.2.2.8:
+UPDATE RELEASE NOTE Signacraft v.2.5.0:
 
 ### Major Updates
 

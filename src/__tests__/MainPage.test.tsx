@@ -21,14 +21,12 @@ describe("MainPage Component — Smoke Test", () => {
             </MemoryRouter>
         );
 
-        expect(screen.getByText(/#elevateyourpresence/i)).toBeInTheDocument();
-
         expect(
             screen.getByText(/your trusted platform for crafting personalized/i)
         ).toBeInTheDocument();
 
         expect(
-            screen.getByRole('button', { name: /start/i })
+            screen.getByRole('button', { name: /start now/i })
         ).toBeInTheDocument();
     });
 

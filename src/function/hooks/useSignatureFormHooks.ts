@@ -37,6 +37,7 @@ function UseSignatureInputFormHooks(onSuccessSubmit : (data: FormDataIncludes)=>
     });
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [formData, setFormData] = useState<FormDataIncludes | null>(null);
+    const [submitAlert, setSubmitAlert] = useState(false);
 
     const SubmitDataHandler = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -46,7 +47,7 @@ function UseSignatureInputFormHooks(onSuccessSubmit : (data: FormDataIncludes)=>
         const isJobPositionValid = inputValue.jobPosition.trim() !== "";
         const isPhoneValid = InputValidation("inputPhoneNumber", inputValue.phone);
 
-        if (isFullNameValid && isEmailValid && isJobPositionValid && isPhoneValid) {
+        if ( isTemplateValid && isFullNameValid && isEmailValid && isJobPositionValid && isPhoneValid) {
             // console.log(inputValue);
             setFormData(inputValue);
             setIsModalOpen(true);
@@ -59,6 +60,7 @@ function UseSignatureInputFormHooks(onSuccessSubmit : (data: FormDataIncludes)=>
                 jobPosition: !isJobPositionValid,
                 phone: !isPhoneValid,
             });
+            setSubmitAlert(true);
             return;
         }
         
@@ -100,8 +102,12 @@ function UseSignatureInputFormHooks(onSuccessSubmit : (data: FormDataIncludes)=>
         }));
     };
 
-    const CloseModalHandler = () => {
-        setIsModalOpen(false)
+    const CloseModalHandler = (modalType: string) => {
+        if (modalType === "verification") {
+            setIsModalOpen(false);
+        } else if (modalType === "alert") {
+            setSubmitAlert(false);
+        }
     };
 
     const SubmitAfterKeyVerifiedHandler = () => {
@@ -114,6 +120,7 @@ function UseSignatureInputFormHooks(onSuccessSubmit : (data: FormDataIncludes)=>
     return {
         inputValue,
         isError,
+        submitAlert,
         isModalOpen,
         formData,
         jobPositionMapping,

@@ -15,8 +15,9 @@ function NavbarComponent() {
         </div>
 
         <ul className={NavbarStyles.navLinks}>
-            <li><Link to="/signature">SignatureX</Link></li>
-            <li><Link to="/">GiftWave</Link></li>
+            <li><Link to="/signature" className="user-select-none">SignatureX</Link></li>
+            <li><Link to="/" className="user-select-none">GiftWave</Link></li>
+            <li><Link to="/" className="user-select-none">AssetFlo</Link></li>
             {/* <li><Link to="/">Docs</Link></li> */}
         </ul>
     </div>
