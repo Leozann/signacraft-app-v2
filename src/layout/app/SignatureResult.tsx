@@ -6,6 +6,7 @@ import ButtonComponent from "../../components/ButtonComponent";
 import IconComponent from "../../components/IconComponent";
 import SignatureResultStyles from "../../assets/styles/SignatureResult.module.scss";
 import SignatureTemplate from "./SignatureTemplate";
+// import TooltipComponent from "../../components/TooltipComponent";
 
 interface UserSignatureData {
     fullName: string;
@@ -72,6 +73,7 @@ function SignatureResult ({signatureData} : SignatureResultProps) {
                     <ButtonComponent buttonClass={SignatureResultStyles.buttonPrimary} buttonType="button" buttonClickFunction={CopyResultHandler}>copy</ButtonComponent>
                 </div>
             </div>
+            {/* <TooltipComponent/> */}
         </CardComponent>
 
         {/* hide the template component, only take the result as copy features */}
