@@ -70,7 +70,7 @@ function SignatureIMA ({userSignatureData}:SignatureTemplateProps) {
                                                     </td> 
                                                 </tr>
                                                 <tr>
-                                                    <td width={"175"} style={{ paddingLeft: '5px', verticalAlign: 'top', lineHeight: 1 }}>
+                                                    <td width={"215"} style={{ paddingLeft: '5px', verticalAlign: 'top', lineHeight: 1 }}>
                                                         <span style={{ fontWeight: 'bold', fontSize: '9pt', whiteSpace: 'nowrap', letterSpacing: '-0.3px' }}>{userSignatureData.fullName}</span><br />
                                                         <span style={{ fontSize: '9pt', letterSpacing: '-0.3px', paddingBottom: "15px"}}>{userSignatureData.jobPosition}</span><br />
                                                         <table cellPadding={0} cellSpacing={0} border={0}>
@@ -81,27 +81,29 @@ function SignatureIMA ({userSignatureData}:SignatureTemplateProps) {
                                                             </tbody>
                                                         </table>
                                                         <span style={{ letterSpacing: '-0.3px' }}>
-                                                            <span style={{ fontWeight: 'bold', fontSize: '9pt' }}>O.</span>&nbsp;<a href="tel:+622138250011" style={{ color: '#365992', textDecoration: 'none', fontSize: '9pt' }}>+62&nbsp;21&nbsp;38250011</a><br />
-                                                            <span style={{ fontWeight: 'bold', fontSize: '9pt' }}>M.</span>&nbsp;<a href={`tel:${userSignatureData.phone}`} style={{ color: '#365992', textDecoration: 'none', fontSize: '9pt' }}>{userSignatureData.phone}</a><br />
+                                                            <span style={{ fontWeight: 'bold', fontSize: '8pt' }}>O.</span>&nbsp;<a href="tel:+622138250011" style={{ color: '#365992', textDecoration: 'none', fontSize: '8pt' }}>+62&nbsp;21&nbsp;38250011</a><br />
+                                                            <span style={{ fontWeight: 'bold', fontSize: '8pt' }}>M.</span>&nbsp;<a href={`tel:${userSignatureData.phone}`} style={{ color: '#365992', textDecoration: 'none', fontSize: '8pt' }}>{userSignatureData.phone}</a><br />
                                                         </span>
-                                                        <span style={{ fontSize: '9pt', letterSpacing: '-0.3px' }}>
+                                                        <span style={{ fontSize: '8pt', letterSpacing: '-0.3px' }}>
                                                             <span style={{ fontWeight: 'bold' }}>E.</span>&nbsp;<a href={`mailto:${userSignatureData.email}`} style={{ color: '#365992' }}>{userSignatureData.email}</a>
                                                         </span>
                                                     </td>
 
-                                                    <td style={{ verticalAlign: 'top', lineHeight: 1 }}>
+                                                    <td width={"185"} style={{ verticalAlign: 'top', lineHeight: 1 }}>
                                                         <span style={{ fontWeight: 'bold', fontSize: '9pt', whiteSpace: 'nowrap', letterSpacing: '-0.3px' }}>Indonesian Maritime Academy</span><br />
                                                         <span style={{ fontSize: '9pt' }}>
-                                                            Menara Tendean, 28Fl,<br />Jl. Kapten Tendean No.20C,<br />Jakarta Sel., DKI Jakarta 12790<br />
+                                                            Menara Tendean, 28Fl,<br />Jl. Kapten Tendean No.20C,<br />DKI Jakarta 12790<br />
                                                         </span>
                                                         <table cellPadding={0} cellSpacing={0} border={0} style={{ fontSize: '8pt'}}>
                                                             <tbody>
                                                                 <tr>
                                                                     <td height={"6"}></td>
                                                                 </tr>
-                                                                <tr>
+
+                                                                {/* <tr>
                                                                     <td height={"6"}></td>
-                                                                </tr>
+                                                                </tr> */}
+
                                                                 <tr>
                                                                     <td>
                                                                         <table cellSpacing={0} cellPadding={0} border={0} width={"100%"}>
