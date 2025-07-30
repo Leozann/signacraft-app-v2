@@ -10,7 +10,6 @@ interface InputGroupProps {
 
 function InputGroupV2 ({inputGroupLabel, inputGroupValue="", inputGroupListener, isInputGroupError = false}: InputGroupProps ) {
 
-    
     return(
         <div className={InputGroupStyles.inputGroup}>
             <p className="user-select-none">{inputGroupLabel}</p>

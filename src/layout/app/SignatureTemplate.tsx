@@ -26,7 +26,7 @@ function SignatureTemplate ({ userSignatureData }: SignatureTemplateProps) {
     fullName: updateSignatureName(userSignatureData.fullName),
   };
     const GenerateTemplate = (templateName: string) => {
-      console.log(formattedSignatureData);
+      // console.log(formattedSignatureData);
       switch (templateName) {
         case "AII":
           return <SignatureAII userSignatureData={formattedSignatureData} />;

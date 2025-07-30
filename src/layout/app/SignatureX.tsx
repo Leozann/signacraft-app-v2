@@ -1,5 +1,5 @@
 // SignatureX.tsx
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import SignatureInputForm from "./SignatureInputForm";
 import SignatureResult from "./SignatureResult";
 
@@ -27,7 +27,10 @@ function SignatureX() {
         <div>
             <SignatureInputForm onSuccessSubmit={DisplayResultHandler} />
             {isFormValid && formData && (
-                <SignatureResult signatureData={{...formData}}/>
+                <Fragment>
+                    <SignatureResult signatureDevice="native" signatureData={{...formData}}/>
+                    <SignatureResult signatureDevice="phone" signatureData={{...formData}}/>
+                </Fragment>
             )}
         </div>
     );

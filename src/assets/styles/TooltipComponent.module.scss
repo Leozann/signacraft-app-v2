@@ -1,11 +1,49 @@
 .wrapper {
     position: fixed;
-    top: 20px; // distance from the top of the screen
+    top: 2.5rem;
     left: 50%;
+    max-width: 300px;
+    height: auto;
     transform: translateX(-50%);
-    background-color: #333;
-    padding: 10px 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 25;
-    width: 300px;
+    background-color: #3D3B40;
+    border: 1px solid;
+    border-color: rgba(255, 254, 239, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    z-index: 35;
+    transition: opacity 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    
+    .tooltip {
+        width: inherit;
+        height: auto;
+        margin: 0rem 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        p {
+            margin: 0;
+            font-size: calc(100% - 3px);
+        }
+
+        .icon {
+            padding-top: 0.2rem;
+            font-size: calc(100% + 2px);
+            color: #FFFEFF;
+        }
+    }
+
+}
+
+// animation
+.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
 }

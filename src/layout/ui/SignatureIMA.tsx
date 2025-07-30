@@ -29,17 +29,18 @@ function SignatureIMA ({userSignatureData}:SignatureTemplateProps) {
                                     </tr> */}
 
                                     <tr>
-                                        <table cellSpacing="0" cellPadding="0" border={0} width={"200pt"}>
-                                            <tbody>
-                                                <tr>
-                                                    <td align="left" width={"175"} style={{ whiteSpace: 'nowrap' }}>
-                                                        &nbsp; 
-                                                        <img src="https://i-mitrastrategis.com/images/e-signature/ima-company/logo_primary.png" {...{ border: "0" }} alt="company" style={{ width: '175px'}}/>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-
+                                        <td>
+                                            <table cellSpacing="0" cellPadding="0" border={0} width={"200pt"}>
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="left" width={"175"} style={{ whiteSpace: 'nowrap' }}>
+                                                            &nbsp; 
+                                                            <img src="https://i-mitrastrategis.com/images/e-signature/ima-company/logo_primary.png" {...{ border: "0" }} alt="company" style={{ width: '175px'}}/>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
                                     </tr>
 
                                     {/* <tr>
@@ -57,99 +58,101 @@ function SignatureIMA ({userSignatureData}:SignatureTemplateProps) {
 
                                     <tr>
                                         {/* table for employee profile */}
-                                        <table cellSpacing="0" cellPadding="0" border={0} style={{ fontFamily: 'Arial, sans-serif', color: "#365992"}}>
-                                            <tbody>
-                                                <tr>
-                                                    <td colSpan={2} width={"250"} height={"5"} style={{ borderBottom: '1px solid #888888'}}>
-                                                        <span>&nbsp;</span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td height={"5"} style={{ verticalAlign: 'top', lineHeight: '1' }}>
-                                                        <span>&nbsp;</span>
-                                                    </td> 
-                                                </tr>
-                                                <tr>
-                                                    <td width={"215"} style={{ paddingLeft: '5px', verticalAlign: 'top', lineHeight: 1 }}>
-                                                        <span style={{ fontWeight: 'bold', fontSize: '9pt', whiteSpace: 'nowrap', letterSpacing: '-0.3px' }}>{userSignatureData.fullName}</span><br />
-                                                        <span style={{ fontSize: '9pt', letterSpacing: '-0.3px', paddingBottom: "15px"}}>{userSignatureData.jobPosition}</span><br />
-                                                        <table cellPadding={0} cellSpacing={0} border={0}>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td height={7} style={{ lineHeight: 0 }}>&nbsp;</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        <span style={{ letterSpacing: '-0.3px' }}>
-                                                            <span style={{ fontWeight: 'bold', fontSize: '8pt' }}>O.</span>&nbsp;<a href="tel:+622138250011" style={{ color: '#365992', textDecoration: 'none', fontSize: '8pt' }}>+62&nbsp;21&nbsp;38250011</a><br />
-                                                            <span style={{ fontWeight: 'bold', fontSize: '8pt' }}>M.</span>&nbsp;<a href={`tel:${userSignatureData.phone}`} style={{ color: '#365992', textDecoration: 'none', fontSize: '8pt' }}>{userSignatureData.phone}</a><br />
-                                                        </span>
-                                                        <span style={{ fontSize: '8pt', letterSpacing: '-0.3px' }}>
-                                                            <span style={{ fontWeight: 'bold' }}>E.</span>&nbsp;<a href={`mailto:${userSignatureData.email}`} style={{ color: '#365992' }}>{userSignatureData.email}</a>
-                                                        </span>
-                                                    </td>
+                                        <td>
+                                            <table cellSpacing="0" cellPadding="0" border={0} style={{ fontFamily: 'Arial, sans-serif', color: "#365992"}}>
+                                                <tbody>
+                                                    <tr>
+                                                        <td colSpan={2} width={"250"} height={"5"} style={{ borderBottom: '1px solid #888888'}}>
+                                                            <span>&nbsp;</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height={"5"} style={{ verticalAlign: 'top', lineHeight: '1' }}>
+                                                            <span>&nbsp;</span>
+                                                        </td> 
+                                                    </tr>
+                                                    <tr>
+                                                        <td width={"215"} style={{ paddingLeft: '5px', verticalAlign: 'top', lineHeight: 1 }}>
+                                                            <span style={{ fontWeight: 'bold', fontSize: '9pt', whiteSpace: 'nowrap', letterSpacing: '-0.3px' }}>{userSignatureData.fullName}</span><br />
+                                                            <span style={{ fontSize: '9pt', letterSpacing: '-0.3px', paddingBottom: "15px"}}>{userSignatureData.jobPosition}</span><br />
+                                                            <table cellPadding={0} cellSpacing={0} border={0}>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td height={7} style={{ lineHeight: 0 }}>&nbsp;</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <span style={{ letterSpacing: '-0.3px' }}>
+                                                                <span style={{ fontWeight: 'bold', fontSize: '8pt' }}>O.</span>&nbsp;<a href="tel:+622138250011" style={{ color: '#365992', textDecoration: 'none', fontSize: '8pt' }}>+62&nbsp;21&nbsp;38250011</a><br />
+                                                                <span style={{ fontWeight: 'bold', fontSize: '8pt' }}>M.</span>&nbsp;<a href={`tel:${userSignatureData.phone}`} style={{ color: '#365992', textDecoration: 'none', fontSize: '8pt' }}>{userSignatureData.phone}</a><br />
+                                                            </span>
+                                                            <span style={{ fontSize: '8pt', letterSpacing: '-0.3px' }}>
+                                                                <span style={{ fontWeight: 'bold' }}>E.</span>&nbsp;<a href={`mailto:${userSignatureData.email}`} style={{ color: '#365992' }}>{userSignatureData.email}</a>
+                                                            </span>
+                                                        </td>
 
-                                                    <td width={"185"} style={{ verticalAlign: 'top', lineHeight: 1 }}>
-                                                        <span style={{ fontWeight: 'bold', fontSize: '9pt', whiteSpace: 'nowrap', letterSpacing: '-0.3px' }}>Indonesian Maritime Academy</span><br />
-                                                        <span style={{ fontSize: '9pt' }}>
-                                                            Menara Tendean, 28Fl,<br />Jl. Kapten Tendean No.20C,<br />DKI Jakarta 12790<br />
-                                                        </span>
-                                                        <table cellPadding={0} cellSpacing={0} border={0} style={{ fontSize: '8pt'}}>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td height={"6"}></td>
-                                                                </tr>
+                                                        <td width={"185"} style={{ verticalAlign: 'top', lineHeight: 1 }}>
+                                                            <span style={{ fontWeight: 'bold', fontSize: '9pt', whiteSpace: 'nowrap', letterSpacing: '-0.3px' }}>Indonesian Maritime Academy</span><br />
+                                                            <span style={{ fontSize: '9pt' }}>
+                                                                Menara Tendean, 28Fl,<br />Jl. Kapten Tendean No.20C,<br />DKI Jakarta 12790<br />
+                                                            </span>
+                                                            <table cellPadding={0} cellSpacing={0} border={0} style={{ fontSize: '8pt'}}>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td height={"6"}></td>
+                                                                    </tr>
 
-                                                                {/* <tr>
-                                                                    <td height={"6"}></td>
-                                                                </tr> */}
+                                                                    {/* <tr>
+                                                                        <td height={"6"}></td>
+                                                                    </tr> */}
 
-                                                                <tr>
-                                                                    <td>
-                                                                        <table cellSpacing={0} cellPadding={0} border={0} width={"100%"}>
-                                                                            <tbody>
-                                                                                {/* Social Media Icons Aligned in The Right Side */}
-                                                                                <tr>
-                                                                                    <td colSpan={2} align="left" style={{whiteSpace: 'nowrap'}}>
-                                                                                        <table cellSpacing={0} cellPadding={0} border={0}>
-                                                                                            <tbody>
-                                                                                                <tr>
-                                                                                                    {[
-                                                                                                        { url: 'https://i-maritimeacademy.com', icon: 'website_icon.png' },
-                                                                                                        { url: 'https://www.instagram.com/maritimeacademy.id', icon: 'instagram_icon.png' },
-                                                                                                        { url: 'https://www.tiktok.com/@maritimeacademy.id', icon: 'tiktok_icon.png' },
-                                                                                                        { url: 'https://www.linkedin.com/in/maratime-academy-973078364', icon: 'linkedIn_icon.png' },
-                                                                                                    ].map((item, index) => (
-                                                                                                    <td key={index} style={{ paddingRight: '3px' }}>
-                                                                                                        <a href={item.url} target="_blank" rel="noopener noreferrer">
-                                                                                                            <img src={`https://i-mitrastrategis.com/images/e-signature/ima-company/${item.icon}`} alt={item.icon} width={17} height={17}/>
-                                                                                                        </a>
-                                                                                                    </td>
-                                                                                                    ))}
-                                                                                                    <td width={"5"}>
-                                                                                                        <span>&nbsp;</span> {/* spacer */}
-                                                                                                    </td>
-                                                                                                </tr>
-                                                                                            </tbody>
-                                                                                        </table>
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td height={"5"} style={{verticalAlign:"top", lineHeight: "1"}} >
-                                                        <span>&nbsp;</span> {/* spacer */}
-                                                    </td>     
-                                                </tr> 
+                                                                    <tr>
+                                                                        <td>
+                                                                            <table cellSpacing={0} cellPadding={0} border={0} width={"100%"}>
+                                                                                <tbody>
+                                                                                    {/* Social Media Icons Aligned in The Right Side */}
+                                                                                    <tr>
+                                                                                        <td colSpan={2} align="left" style={{whiteSpace: 'nowrap'}}>
+                                                                                            <table cellSpacing={0} cellPadding={0} border={0}>
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        {[
+                                                                                                            { url: 'https://i-maritimeacademy.com', icon: 'website_icon.png' },
+                                                                                                            { url: 'https://www.instagram.com/maritimeacademy.id', icon: 'instagram_icon.png' },
+                                                                                                            { url: 'https://www.tiktok.com/@maritimeacademy.id', icon: 'tiktok_icon.png' },
+                                                                                                            { url: 'https://www.linkedin.com/in/maratime-academy-973078364', icon: 'linkedIn_icon.png' },
+                                                                                                        ].map((item, index) => (
+                                                                                                        <td key={index} style={{ paddingRight: '3px' }}>
+                                                                                                            <a href={item.url} target="_blank" rel="noopener noreferrer">
+                                                                                                                <img src={`https://i-mitrastrategis.com/images/e-signature/ima-company/${item.icon}`} alt={item.icon} width={17} height={17}/>
+                                                                                                            </a>
+                                                                                                        </td>
+                                                                                                        ))}
+                                                                                                        <td width={"5"}>
+                                                                                                            <span>&nbsp;</span> {/* spacer */}
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td height={"5"} style={{verticalAlign:"top", lineHeight: "1"}} >
+                                                            <span>&nbsp;</span> {/* spacer */}
+                                                        </td>     
+                                                    </tr> 
 
-                                            </tbody>
-                                        </table>
+                                                </tbody>
+                                            </table>
+                                        </td>
 
                                         {/* <td width={"250"} style={{ paddingLeft: '5px', verticalAlign: 'top', lineHeight: 1 }}>
 

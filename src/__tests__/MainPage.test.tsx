@@ -15,7 +15,6 @@ describe("MainPage Component — Smoke Test", () => {
                 <Routes>
                     <Route path="/" element={<MainPage />}>
                         <Route index element={<StartButton />} />
-                        <Route path="signature" element={<SignatureX />} />
                     </Route>
                 </Routes>
             </MemoryRouter>
