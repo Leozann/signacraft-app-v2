@@ -134,5 +134,13 @@
     {
         "value": 34,
         "label": "Crewing Team Leader"
+    },
+    {
+        "value": 35,
+        "label": "Operator & Technical Support"
+    },
+    {
+        "value": 36,
+        "label": "Finance Senior Staff"
     }
 ]
