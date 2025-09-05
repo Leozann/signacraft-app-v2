@@ -1,4 +1,4 @@
-import {useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 
 import NavbarComponent from "../components/NavbarComponent";
@@ -11,7 +11,7 @@ import TypingEffect from "../layout/app/TypingEffect";
 
 const ResponsiveHeading = () => {
     const [isMobileLayout, setIsMobileLayout] = useState(false);
-    useEffect(()=> {
+    useEffect(() => {
         const resizeHandler = () => {
             setIsMobileLayout(window.innerWidth < 480);
         };
@@ -21,33 +21,33 @@ const ResponsiveHeading = () => {
         return () => window.removeEventListener("resize", resizeHandler);
 
     }, []);
-    return isMobileLayout? <TypingEffect typingSpeed={100} typoChance={0.5}><h3 style={{textAlign: "left"}}>#ElevateYourPresence</h3></TypingEffect> : <TypingEffect typingSpeed={100} typoChance={0.5}><h1 style={{textAlign: "left"}}>#ElevateYourPresence</h1></TypingEffect>
+    return isMobileLayout ? <TypingEffect typingSpeed={100} typoChance={0.5}><h3 style={{ textAlign: "left" }}>#ElevateYourPresence</h3></TypingEffect> : <TypingEffect typingSpeed={100} typoChance={0.5}><h1 style={{ textAlign: "left" }}>#ElevateYourPresence</h1></TypingEffect>
 };
 
 function MainPage() {
-    return(
-    <BlurredBackground>
-        <CursorEffect>
-            <NavbarComponent/>
-            <CenteredLayout>
-                <div className={MainPageStyles.Container}>
+    return (
+        <BlurredBackground>
+            <CursorEffect>
+                <NavbarComponent />
+                <CenteredLayout>
+                    <div className={MainPageStyles.Container}>
                         <div className={`${MainPageStyles.heading} user-select-none`}>
                             <div className={MainPageStyles.wrapper}>
-                                <ResponsiveHeading/>
+                                <ResponsiveHeading />
                             </div>
                         </div>
                         <div className={`${MainPageStyles.description} user-select-none`}>
                             <p>Your trusted platform for crafting personalized, professional communications. Our simple yet powerful tools help you leave a lasting impression with email signatures, branding, and messages. Start with our template today and elevate your communication with ease and creativity.</p>
                         </div>
-                    <div className={MainPageStyles.callToAction}>
-                        <Outlet/>
+                        <div className={MainPageStyles.callToAction}>
+                            <Outlet />
+                        </div>
                     </div>
-                </div>
-                
-            </CenteredLayout>
-            <FooterComponent/>
-        </CursorEffect>
-    </BlurredBackground>
+
+                </CenteredLayout>
+                <FooterComponent />
+            </CursorEffect>
+        </BlurredBackground>
     )
 };
 export default MainPage;

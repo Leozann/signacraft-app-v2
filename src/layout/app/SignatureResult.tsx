@@ -21,7 +21,7 @@ interface SignatureResultProps {
     signatureDevice?: string; // Optional prop for device type, if needed
 }
 
-function SignatureResult ({signatureData, signatureDevice} : SignatureResultProps) {
+function SignatureResult({ signatureData, signatureDevice }: SignatureResultProps) {
     const templateRef = createRef<HTMLDivElement>();
     const [isCopied, setIsCopied] = useState(false);
 
@@ -40,7 +40,7 @@ function SignatureResult ({signatureData, signatureDevice} : SignatureResultProp
         }
     };
 
-    const CopyResultHandler = async() => {
+    const CopyResultHandler = async () => {
         if (templateRef.current) {
             const content = templateRef.current.innerHTML;
             try {
@@ -67,13 +67,13 @@ function SignatureResult ({signatureData, signatureDevice} : SignatureResultProp
     const clipboardName = GetClipboardName();
 
     if (signatureDevice === "native") {
-        return(
+        return (
             <Fragment>
                 <CardComponent cardClass={SignatureResultStyles.card}>
                     <div className={`${SignatureResultStyles.wrapper} user-select-none`}>
                         <div className={SignatureResultStyles.displayFlex}>
                             <div className={SignatureResultStyles.platform}>
-                                <IconComponent iconType="chrome" iconClass={SignatureResultStyles.icon}/>
+                                <IconComponent iconType="chrome" iconClass={SignatureResultStyles.icon} />
                                 {/* <IconComponent iconType="phone" iconClass={SignatureResultStyles.icon}/> */}
                                 {/* <IconComponent iconType="laptop-2" iconClass={SignatureResultStyles.icon}/> */}
                                 <p>{clipboardName}</p>
@@ -81,46 +81,46 @@ function SignatureResult ({signatureData, signatureDevice} : SignatureResultProp
                             <ButtonComponent buttonClass={SignatureResultStyles.buttonPrimary} buttonType="button" buttonClickFunction={CopyResultHandler}>copy</ButtonComponent>
                         </div>
                     </div>
-                    <TooltipComponent isCollapsed={!isCopied} message="Copied to clipboard!"/>
+                    <TooltipComponent isCollapsed={!isCopied} message="Copied to clipboard!" />
                 </CardComponent>
 
                 {/* hide the template component, only take the result as copy features */}
-                {/* <div ref={templateRef} style={{backgroundColor: "white", height: "auto"}}>
-                    <SignatureTemplate userSignatureData={signatureData}/>
+                {/* <div ref={templateRef} style={{ backgroundColor: "white", height: "auto" }}>
+                    <SignatureTemplate userSignatureData={signatureData} />
                 </div> */}
 
-                <div ref={templateRef} style={{display: "none"}}>
-                    <SignatureTemplate userSignatureData={signatureData}/>
+                <div ref={templateRef} style={{ display: "none" }}>
+                    <SignatureTemplate userSignatureData={signatureData} />
                 </div>
             </Fragment>
-    );
+        );
     } else {
-        return(
+        return (
             <Fragment>
                 <CardComponent cardClass={SignatureResultStyles.card}>
                     <div className={`${SignatureResultStyles.wrapper} user-select-none`}>
                         <div className={SignatureResultStyles.displayFlex}>
                             <div className={SignatureResultStyles.platform}>
-                                <IconComponent iconType="phone" iconClass={SignatureResultStyles.icon}/>
+                                <IconComponent iconType="phone" iconClass={SignatureResultStyles.icon} />
                                 {/* <IconComponent iconType="laptop-2" iconClass={SignatureResultStyles.icon}/> */}
                                 <p>{clipboardName}</p>
                             </div>
                             {/* <ButtonComponent buttonClass={SignatureResultStyles.buttonPrimary} buttonType="button" buttonClickFunction={CopyResultHandler}>copy</ButtonComponent> */}
                         </div>
                     </div>
-                    <TooltipComponent isCollapsed={!isCopied} message="Copied to clipboard!"/>
+                    <TooltipComponent isCollapsed={!isCopied} message="Copied to clipboard!" />
                 </CardComponent>
 
                 {/* hide the template component, only take the result as copy features */}
-                {/* <div ref={templateRef} style={{backgroundColor: "white", height: "auto"}}>
-                    <SignatureTemplate userSignatureData={signatureData}/>
+                {/* <div ref={templateRef} style={{ backgroundColor: "white", height: "auto" }}>
+                    <SignatureTemplate userSignatureData={signatureData} />
                 </div> */}
 
-                <div ref={templateRef} style={{display: "none"}}>
-                    <SignatureTemplate userSignatureData={signatureData}/>
+                <div ref={templateRef} style={{ display: "none" }}>
+                    <SignatureTemplate userSignatureData={signatureData} />
                 </div>
             </Fragment>
-        );
+        ) // will create mobile signature template
     }
 
     // return(
