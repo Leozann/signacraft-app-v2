@@ -1,14 +1,8 @@
 import { Fragment } from "react/jsx-runtime";
-
-interface UserSignatureData {
-    fullName: string;
-    jobPosition: string;
-    phone: string;
-    email: string;
-};
+import { IFormData } from "@/function/types/form";
 
 interface SignatureTemplateProps {
-    userSignatureData: UserSignatureData;
+    userSignatureData: IFormData;
 };
 
 function SignatureAII({ userSignatureData }: SignatureTemplateProps) {
@@ -144,19 +138,6 @@ function SignatureAII({ userSignatureData }: SignatureTemplateProps) {
                                     </tr>
                                 </tbody>
                             </table>
-                            {/* <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '10pt', fontWeight: 'bold', margin: '0', color: '#1B1C1E', lineHeight: '1.1' }}>
-                            Confidentiality Notes:
-                        </p>
-                        <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '10pt', margin: '0', color: '#1B1C1E', lineHeight: '1.1' }}>
-                            This email may contain confidential and/or private information.
-                        </p>
-                        <p style={{ fontFamily: 'Arial, sans-serif', fontSize: '10pt', margin: '0', color: '#1B1C1E', lineHeight: '1.1' }}>
-                            If you have received this email in error, please delete the message and notify the senders or{' '}
-                            <a href="https://g.co/kgs/FiqBTxA" target="_blank" rel="noopener noreferrer" style={{ color: '#99005D' }}>
-                            complaint
-                            </a>
-                            .
-                        </p> */}
 
                             <p style={{ fontSize: '8pt', fontWeight: 'bold', margin: 0, color: '#1E1364', lineHeight: 1.1 }}>Confidentiality Notes:</p>
                             <p style={{ fontSize: '7pt', fontWeight: 'bold', margin: 0, color: '#1E1364', lineHeight: 1.1 }}>This email may contain confidential and/or private information.</p>

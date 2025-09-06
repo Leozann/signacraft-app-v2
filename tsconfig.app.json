@@ -24,6 +24,10 @@
 
     /* test mode */
     // "types": ["vitest"]
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    }
   },
   "include": ["src"],
   "exclude": ["**/*.test.ts", "**/*.test.tsx"]

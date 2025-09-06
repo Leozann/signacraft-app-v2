@@ -1,23 +1,16 @@
 import { createRef, useState } from "react";
 import { Fragment } from "react/jsx-runtime";
 
-import CardComponent from "../../components/CardComponent";
-import ButtonComponent from "../../components/ButtonComponent";
-import IconComponent from "../../components/IconComponent";
-import SignatureResultStyles from "../../assets/styles/SignatureResult.module.scss";
+import CardComponent from "@/components/CardComponent";
+import ButtonComponent from "@/components/ButtonComponent";
+import IconComponent from "@/components/IconComponent";
+import SignatureResultStyles from "@/assets/styles/SignatureResult.module.scss";
 import SignatureTemplate from "./SignatureTemplate";
-import TooltipComponent from "../../components/TooltipComponent";
-
-interface UserSignatureData {
-    fullName: string;
-    email: string;
-    jobPosition: string;
-    phone: string;
-    template: string;
-}
+import TooltipComponent from "@/components/TooltipComponent";
+import { IFormData } from "@/function/types/form";
 
 interface SignatureResultProps {
-    signatureData: UserSignatureData;
+    signatureData: IFormData;
     signatureDevice?: string; // Optional prop for device type, if needed
 }
 

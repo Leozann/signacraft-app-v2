@@ -1,14 +1,8 @@
 import { Fragment } from "react/jsx-runtime"
-
-interface UserSignatureData {
-    fullName: string;
-    jobPosition: string;
-    phone: string;
-    email: string;
-}
+import { IFormData } from "@/function/types/form";
 
 interface SignatureTemplateProps {
-    userSignatureData: UserSignatureData;
+    userSignatureData: IFormData;
 }
 
 function SignatureIMS({ userSignatureData }: SignatureTemplateProps) {

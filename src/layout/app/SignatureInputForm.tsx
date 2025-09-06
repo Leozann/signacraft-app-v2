@@ -1,22 +1,15 @@
-import CardComponent from "../../components/CardComponent";
+import CardComponent from "@/components/CardComponent";
 import InputGroupV2 from "./InputGroupV2";
-import ButtonComponent from "../../components/ButtonComponent";
+import ButtonComponent from "@/components/ButtonComponent";
 import SelectGroup from "./SelectGroup";
 import SignatureInputFormStyles from "../../assets/styles/SignatureInputForm.module.scss"
 import SignatureVerification from "./SignatureVerification";
 import { UseSignatureInputFormHooks } from "../../function/hooks/useSignatureFormHooks";
 import SignatureInputInvalid from "./SignatureInputInvalid";
-
-interface FormDataIncludes {
-    fullName: string;
-    email: string;
-    jobPosition: string;
-    phone: string;
-    template: string;
-};
+import { IFormData } from "@/function/types/form";
 
 interface SignatureInputFormProps {
-    onSuccessSubmit: (data: FormDataIncludes) => void;
+    onSuccessSubmit: (data: IFormData) => void;
 };
 
 function SignatureInputForm({onSuccessSubmit}: SignatureInputFormProps) {

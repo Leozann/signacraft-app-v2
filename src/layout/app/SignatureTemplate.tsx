@@ -2,18 +2,11 @@ import { Fragment } from "react/jsx-runtime";
 import SignatureAII from "../ui/SignatureAII";
 import SignatureIMS from "../ui/SignatureIMS";
 import SignatureIMA from "../ui/SignatureIMA";
-import { InputFormat } from "../../function/utils/inputUtils";
-
-interface UserSignatureData {
-  fullName: string;
-  jobPosition: string;
-  phone: string;
-  email: string;
-  template: string;
-}
+import { InputFormat } from "@/function/utils/inputUtils";
+import { IFormData } from "@/function/types/form";
 
 interface SignatureTemplateProps {
-  userSignatureData: UserSignatureData;
+  userSignatureData: IFormData;
 }
 
 function SignatureTemplate({ userSignatureData }: SignatureTemplateProps) {
@@ -22,7 +15,7 @@ function SignatureTemplate({ userSignatureData }: SignatureTemplateProps) {
     return InputFormat("fullNameAbbreviation", fullName);
   };
 
-  const formattedSignatureData: UserSignatureData = {
+  const formattedSignatureData: IFormData = {
     ...userSignatureData,
     fullName: updateSignatureName(userSignatureData.fullName),
   };

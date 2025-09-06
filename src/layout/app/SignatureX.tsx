@@ -1,21 +1,13 @@
-// SignatureX.tsx
 import { Fragment, useState } from "react";
 import SignatureInputForm from "./SignatureInputForm";
 import SignatureResult from "./SignatureResult";
-
-interface FormDataIncludes {
-    fullName: string;
-    email: string;
-    jobPosition: string;
-    phone: string;
-    template: string;
-}
+import { IFormData } from "@/function/types/form";
 
 function SignatureX() {
     const [isFormValid, setIsFormValid] = useState(false);
-    const [formData, setFormData] = useState<FormDataIncludes | null>(null);
+    const [formData, setFormData] = useState<IFormData | null>(null);
 
-    const DisplayResultHandler = (newInputData: FormDataIncludes) => {
+    const DisplayResultHandler = (newInputData: IFormData) => {
         if (newInputData) {
             // console.log(newInputData);
             setIsFormValid(true);

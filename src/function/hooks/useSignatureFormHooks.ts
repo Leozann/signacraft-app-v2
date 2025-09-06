@@ -1,18 +1,11 @@
 // managing react state, effects, or lifecycle logic
 import { useState } from "react";
 import { InputValidation, InputFormat, PhoneNumberFormat, SanitizeInputValue } from "../utils/inputUtils";
-import signatureTemplateJSON from "../../assets/json/companyTemplateStatic.json";
-import jobPositionStaticJSON from "../../assets/json/jobPositionStatic.json";
+import signatureTemplateJSON from "@/assets/json/companyTemplateStatic.json";
+import jobPositionStaticJSON from "@/assets/json/jobPositionStatic.json";
+import { IFormData } from "../types/form";
 
-interface FormDataIncludes {
-    fullName: string;
-    email: string;
-    jobPosition: string;
-    phone: string;
-    template: string;
-};
-
-function UseSignatureInputFormHooks(onSuccessSubmit : (data: FormDataIncludes)=> void) {
+function UseSignatureInputFormHooks(onSuccessSubmit : (data: IFormData)=> void) {
     const jobPositionMapping = jobPositionStaticJSON.map(item => ({
         ...item,
         value: String(item.value),
@@ -36,7 +29,7 @@ function UseSignatureInputFormHooks(onSuccessSubmit : (data: FormDataIncludes)=>
         phone: false,
     });
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [formData, setFormData] = useState<FormDataIncludes | null>(null);
+    const [formData, setFormData] = useState<IFormData | null>(null);
     const [submitAlert, setSubmitAlert] = useState(false);
 
     const SubmitDataHandler = (event: React.FormEvent<HTMLFormElement>) => {
@@ -132,5 +125,4 @@ function UseSignatureInputFormHooks(onSuccessSubmit : (data: FormDataIncludes)=>
     }
 };
 
-export type { FormDataIncludes };
 export { UseSignatureInputFormHooks };
