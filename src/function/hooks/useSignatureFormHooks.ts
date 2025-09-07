@@ -1,19 +1,13 @@
 // managing react state, effects, or lifecycle logic
 import { useState } from "react";
 import { InputValidation, InputFormat, PhoneNumberFormat, SanitizeInputValue } from "../utils/inputUtils";
-import signatureTemplateJSON from "@/assets/json/companyTemplateStatic.json";
-import jobPositionStaticJSON from "@/assets/json/jobPositionStatic.json";
 import { IFormData } from "../types/form";
+import { HSignatureTemplate } from "../helper/signatureTemplateHelper";
+import { HJobPosition } from "../helper/jobPositionHelper";
 
 function UseSignatureInputFormHooks(onSuccessSubmit : (data: IFormData)=> void) {
-    const jobPositionMapping = jobPositionStaticJSON.map(item => ({
-        ...item,
-        value: String(item.value),
-    }));
-    const signatureTemplateMapping = signatureTemplateJSON.map(item => ({
-        ...item,
-        value: String(item.value),
-    })) 
+    const jobPositionMapping = HJobPosition();
+    const signatureTemplateMapping = HSignatureTemplate();
     const [inputValue, setInputValue] = useState({
         template: "",
         fullName: "",

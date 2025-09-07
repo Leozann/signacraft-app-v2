@@ -11,7 +11,7 @@ import { IFormData } from "@/function/types/form";
 
 interface SignatureResultProps {
     signatureData: IFormData;
-    signatureDevice?: string; // Optional prop for device type, if needed
+    signatureDevice?: string; // optional prop for device type, if needed
 }
 
 function SignatureResult({ signatureData, signatureDevice }: SignatureResultProps) {
@@ -115,34 +115,6 @@ function SignatureResult({ signatureData, signatureDevice }: SignatureResultProp
             </Fragment>
         ) // will create mobile signature template
     }
-
-    // return(
-    // <Fragment>
-    //     <CardComponent cardClass={SignatureResultStyles.card}>
-    //         <div className={`${SignatureResultStyles.wrapper} user-select-none`}>
-    //             <div className={SignatureResultStyles.displayFlex}>
-    //                 <div className={SignatureResultStyles.platform}>
-    //                     <IconComponent iconType="chrome" iconClass={SignatureResultStyles.icon}/>
-    //                     {/* <IconComponent iconType="phone" iconClass={SignatureResultStyles.icon}/> */}
-    //                     {/* <IconComponent iconType="laptop-2" iconClass={SignatureResultStyles.icon}/> */}
-    //                     <p>{clipboardName}</p>
-    //                 </div>
-    //                 <ButtonComponent buttonClass={SignatureResultStyles.buttonPrimary} buttonType="button" buttonClickFunction={CopyResultHandler}>copy</ButtonComponent>
-    //             </div>
-    //         </div>
-    //         <TooltipComponent isCollapsed={!isCopied} message="Copied to clipboard!"/>
-    //     </CardComponent>
-
-    //     {/* hide the template component, only take the result as copy features */}
-    //     {/* <div ref={templateRef} style={{backgroundColor: "white", height: "auto"}}>
-    //         <SignatureTemplate userSignatureData={signatureData}/>
-    //     </div> */}
-
-    //     <div ref={templateRef} style={{display: "none"}}>
-    //         <SignatureTemplate userSignatureData={signatureData}/>
-    //     </div>
-    // </Fragment>
-    // );
 };
 
 export default SignatureResult;
