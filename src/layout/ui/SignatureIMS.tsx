@@ -99,13 +99,14 @@ function SignatureIMS({ userSignatureData }: SignatureTemplateProps) {
                                                                         <td style={{ verticalAlign: 'top', lineHeight: '1', fontSize: '8pt', whiteSpace: 'nowrap', paddingLeft: '30px' }}>
                                                                             <span style={{ letterSpacing: '-0.3px' }}>
                                                                                 <span style={{ fontWeight: 'bold', color: '#174E86' }}>W.</span>&nbsp;
-                                                                                <a href="www.i-mitrastrategis.com" style={{ color: '#174E86' }}>&nbsp;www.i-mitrastrategis.com</a>
+                                                                                <a href="https://i-mitrastrategis.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#174E86' }}>&nbsp;www.i-mitrastrategis.com</a>
                                                                             </span>
 
                                                                         </td>
 
                                                                     </tr>
                                                                     <tr>
+
                                                                         <td height={10}></td>
                                                                     </tr>
                                                                     <tr>
