@@ -13,5 +13,10 @@
     "value": "03",
     "label": "IMA",
     "isDisabled": false
+},
+{
+    "value": "04",
+    "label": "ICS",
+    "isDisabled": false
 }
 ]

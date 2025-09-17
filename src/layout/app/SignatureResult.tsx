@@ -104,14 +104,14 @@ function SignatureResult({ signatureData, signatureDevice }: SignatureResultProp
                     <TooltipComponent isCollapsed={!isCopied} message="Copied to clipboard!" />
                 </CardComponent>
 
-                {/* hide the template component, only take the result as copy features */}
-                {/* <div ref={templateRef} style={{ backgroundColor: "white", height: "auto" }}>
-                    <SignatureTemplate userSignatureData={signatureData} />
-                </div> */}
-
-                <div ref={templateRef} style={{ display: "none" }}>
+                hide the template component, only take the result as copy features
+                <div ref={templateRef} style={{ backgroundColor: "white", height: "auto" }}>
                     <SignatureTemplate userSignatureData={signatureData} />
                 </div>
+
+                {/* <div ref={templateRef} style={{ display: "none" }}>
+                    <SignatureTemplate userSignatureData={signatureData} />
+                </div> */}
             </Fragment>
         ) // will create mobile signature template
     }

@@ -2,6 +2,7 @@ import { Fragment } from "react/jsx-runtime";
 import SignatureAII from "../ui/SignatureAII";
 import SignatureIMS from "../ui/SignatureIMS";
 import SignatureIMA from "../ui/SignatureIMA";
+import SignatureICS from "../ui/SignatureICS";
 import { InputFormat } from "@/function/utils/inputUtils";
 import { IFormData } from "@/function/types/form";
 
@@ -28,6 +29,8 @@ function SignatureTemplate({ userSignatureData }: SignatureTemplateProps) {
         return <SignatureIMS userSignatureData={formattedSignatureData} />;
       case "IMA":
         return <SignatureIMA userSignatureData={formattedSignatureData} />;
+      case "ICS":
+        return <SignatureICS userSignatureData={formattedSignatureData} />;
     };
     console.log(templateName);
   }

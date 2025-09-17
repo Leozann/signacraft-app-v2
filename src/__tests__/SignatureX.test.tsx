@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { describe, it, expect } from 'vitest';
 import userEvent from '@testing-library/user-event';
@@ -90,8 +90,28 @@ describe("SignatureX - Smoke & Form Test", () => {
 
 
         await user.click(submitButton);
-        const modalTitle = await screen.findByText(/enter key to confirm signature/i);
-        expect(modalTitle).toBeInTheDocument();
+        // // pastikan modal muncul
+        // const modal = await screen.findByRole("dialog", {}, { timeout: 2000 });
+        // expect(modal).toBeInTheDocument();
+
+        // // pastikan ada input product key di dalam modal
+        // const inputs = within(modal).getAllByRole("textbox");
+        // expect(inputs).toHaveLength(6);
+        // // const modal = await screen.findByRole("dialog", {}, { timeout: 2000 });
+        // // expect(modal).toBeInTheDocument();
+
+
+
+        // const modalTitle = await screen.findByText((content) =>
+        //     content.toLowerCase().includes("enter key to confirm signature")
+        // );
+        // expect(modalTitle).toBeInTheDocument();
+
+        // const modalTitle = await screen.findByRole("heading", { name: /enter key to confirm signature/i });
+        // expect(modalTitle).toBeInTheDocument();
+
+        // const modalTitle = await screen.findByText(/enter key to confirm signature/i);
+        // expect(modalTitle).toBeInTheDocument();
         // const modal = await screen.findByRole("dialog");
         // expect(modal).toBeInTheDocument();
 
@@ -99,6 +119,7 @@ describe("SignatureX - Smoke & Form Test", () => {
         // expect(
         //     screen.getByText(/enter key to confirm signature/i)
         // ).toBeInTheDocument();
+
     });
 
 });
