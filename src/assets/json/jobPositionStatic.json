@@ -146,5 +146,13 @@
     {
         "value": 37,
         "label": "Marketing Officer"
+    },
+    {
+        "value": 38,
+        "label": "Communication Specialist"
+    },
+    {
+        "value": 39,
+        "label": "Quality Assurance Officer"
     }
 ]
