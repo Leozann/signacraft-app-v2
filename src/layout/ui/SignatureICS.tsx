@@ -117,41 +117,6 @@ function SignatureICS({ userSignatureData }: SignatureTemplateProps) {
                                                                             </tbody>
                                                                         </table>
                                                                     </td>
-
-                                                                    {/* <td style={{ fontSize: '9pt', color: '#174E86', paddingLeft: '30px', verticalAlign: 'top', whiteSpace: 'nowrap' }}>
-                                                                        <strong>W.</strong>&nbsp;
-                                                                        <a
-                                                                            href="https://www.i-mitrastrategis.com"
-                                                                            target="_blank"
-                                                                            rel="noopener noreferrer"
-                                                                            style={{ color: '#174E86', textDecoration: 'none' }}
-                                                                        >
-                                                                            www.i-mitrastrategis.com
-                                                                        </a>
-                                                                    </td> */}
-                                                                    {/* <tr>
-                                                                        <td height={10}></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style={{ verticalAlign: 'top', lineHeight: '1', whiteSpace: 'nowrap', letterSpacing: '-0.3px' }}>
-                                                                            <span style={{ fontWeight: 'bold', fontSize: '8pt', color: '#763E9B' }}>&nbsp;Menara Tendean, 28Fl</span><br />
-                                                                            <span style={{ fontSize: '8pt', color: '#763E9B' }}>&nbsp;Jl. Kapten Tendean No.20C,<br />&nbsp;Jakarta Sel., DKI Jakarta 12790</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td height={10}></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <table cellPadding={0} cellSpacing={0} border={0}>
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td height={7} style={{ lineHeight: 0 }}>&nbsp;</td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr> */}
                                                                 </tbody>
                                                             </table>
                                                         </td>
@@ -167,7 +132,7 @@ function SignatureICS({ userSignatureData }: SignatureTemplateProps) {
                             </table>
                             <p style={{ fontSize: '8pt', fontWeight: 'bold', margin: 0, color: '#763E9B', lineHeight: 1.1 }}>Confidentiality Notes:</p>
                             <p style={{ fontSize: '7pt', fontWeight: 'bold', margin: 0, color: '#763E9B', lineHeight: 1.1 }}>This email may contain confidential and/or private information.</p>
-                            <p style={{ fontSize: '7pt', fontWeight: 'bold', margin: 0, color: '#763E9B', lineHeight: 1.1 }}>If received in error, please delete it and notify the senders or&nbsp;<a href="https://forms.gle/dR5d8hG127kTiNWs8" target="_blank" rel="noopener noreferrer" style={{ color: '#99005D' }}>complaint</a>.</p>
+                            {/* <p style={{ fontSize: '7pt', fontWeight: 'bold', margin: 0, color: '#763E9B', lineHeight: 1.1 }}>If received in error, please delete it and notify the senders or&nbsp;<a href="https://forms.gle/dR5d8hG127kTiNWs8" target="_blank" rel="noopener noreferrer" style={{ color: '#99005D' }}>complaint</a>.</p> */}
                         </td>
                     </tr>
                 </tbody>

@@ -154,5 +154,9 @@
     {
         "value": 39,
         "label": "Quality Assurance Officer"
+    },
+    {
+        "value": 40,
+        "label": "Jr. Frontend Engineer"
     }
 ]

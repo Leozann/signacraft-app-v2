@@ -130,97 +130,6 @@ function SignatureIMS({ userSignatureData }: SignatureTemplateProps) {
                                                                             www.i-mitrastrategis.com
                                                                         </a>
                                                                     </td>
-
-
-                                                                    {/* <tr>
-                                                                        
-                                                                            <td style={{ fontSize: '9pt', color: '#174E86', lineHeight: '1.4' }}>
-                                                                                <table
-                                                                                cellPadding="0"
-                                                                                cellSpacing="0"
-                                                                                border={0}
-                                                                                style={{ lineHeight: '1.4', fontSize: '9pt', color: '#174E86' }}
-                                                                                >
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td><strong>Menara Tendean, 28Fl</strong></td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Jl. Kapten Tendean No.20C</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Jakarta Sel., DKI Jakarta 12790</td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-
-                                                                            <table cellSpacing="0" cellPadding="0" border={0} width="100%">
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td style={{ fontSize: '9pt', color: '#174E86', lineHeight: '1.4' }}>
-                                                                                            <div><strong>Menara Tendean, 28Fl</strong></div><div>Jl. Kapten Tendean No.20C,</div> <div>Jakarta Sel., DKI Jakarta 12790</div>
-                                                                                        </td>
-                                                                                        <td
-                                                                                            style={{
-                                                                                                fontSize: '9pt',
-                                                                                                color: '#174E86',
-                                                                                                paddingLeft: '30px',
-                                                                                                whiteSpace: 'nowrap',
-                                                                                                verticalAlign: 'top'
-                                                                                            }}
-                                                                                        >
-                                                                                            <strong>W.</strong>&nbsp;
-                                                                                            <a
-                                                                                                href="https://www.i-mitrastrategis.com"
-                                                                                                target="_blank"
-                                                                                                rel="noopener noreferrer"
-                                                                                                style={{ color: '#174E86', textDecoration: 'none' }}
-                                                                                            >
-                                                                                                www.i-mitrastrategis.com
-                                                                                            </a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr> */}
-
-
-                                                                    {/* <tr>
-                                                                        <td height={10}></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style={{ verticalAlign: 'top', lineHeight: '1', whiteSpace: 'nowrap', letterSpacing: '-0.3px' }}>
-                                                                            <span style={{ fontWeight: 'bold', fontSize: '8pt', color: '#174E86' }}>&nbsp;Menara Tendean, 28Fl</span><br />
-                                                                            <span style={{ fontSize: '8pt', color: '#174E86' }}>&nbsp;Jl. Kapten Tendean No.20C,<br />&nbsp;Jakarta Sel., DKI Jakarta 12790</span>
-                                                                        </td>
-
-
-
-                                                                        <td style={{ verticalAlign: 'top', lineHeight: '1', fontSize: '8pt', whiteSpace: 'nowrap', paddingLeft: '30px' }}>
-                                                                            <span style={{ letterSpacing: '-0.3px' }}>
-                                                                                <span style={{ fontWeight: 'bold', color: '#174E86' }}>W.</span>&nbsp;
-                                                                                <a href="https://i-mitrastrategis.com/" target="_blank" rel="noopener noreferrer" style={{ color: '#174E86' }}>&nbsp;www.i-mitrastrategis.com</a>
-                                                                            </span>
-
-                                                                        </td>
-
-                                                                    </tr>
-                                                                    <tr>
-
-                                                                        <td height={10}></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <table cellPadding={0} cellSpacing={0} border={0}>
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td height={7} style={{ lineHeight: 0 }}>&nbsp;</td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr> */}
                                                                 </tbody>
                                                             </table>
                                                         </td>
@@ -236,7 +145,7 @@ function SignatureIMS({ userSignatureData }: SignatureTemplateProps) {
                             </table>
                             <p style={{ fontSize: '8pt', fontWeight: 'bold', margin: 0, color: '#174E86', lineHeight: 1.1 }}>Confidentiality Notes:</p>
                             <p style={{ fontSize: '7pt', fontWeight: 'bold', margin: 0, color: '#174E86', lineHeight: 1.1 }}>This email may contain confidential and/or private information.</p>
-                            <p style={{ fontSize: '7pt', fontWeight: 'bold', margin: 0, color: '#174E86', lineHeight: 1.1 }}>If received in error, please delete it and notify the senders or&nbsp;<a href="https://forms.gle/dR5d8hG127kTiNWs8" target="_blank" rel="noopener noreferrer" style={{ color: '#C94749' }}>complaint</a>.</p>
+                            <p style={{ fontSize: '7pt', fontWeight: 'bold', margin: 0, color: '#174E86', lineHeight: 1.1 }}>If received in error, please delete it and notify the senders or&nbsp;<a href="https://forms.gle/X3PLrTRaX1bXtskXA" target="_blank" rel="noopener noreferrer" style={{ color: '#C94749' }}>complaint</a>.</p>
                         </td>
                     </tr>
                 </tbody>

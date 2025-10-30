@@ -1,5 +1,5 @@
   import {createBrowserRouter, Navigate } from "react-router-dom";
-  import LoadWrapperUtils from "@/function/utils/LoadWrapperUtils";
+  import LoadWrapperUtils from "@/function/utils/loadWrapperUtils";
   import { lazy } from "react";
 
   // import all components use lazy loads method for better performance
