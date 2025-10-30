@@ -1,11 +1,15 @@
-import { Suspense } from "react";
+import { Suspense, ComponentType, LazyExoticComponent} from "react";
 
-function LoadWrapperUtils(Component: React.LazyExoticComponent<any>) {
-    return (props: any) => (
-        <Suspense fallback={null}>
-            <Component {...props} />
-        </Suspense>
+function LoadWrapperUtils<P extends object>(
+  Component: LazyExoticComponent<ComponentType<P>>
+): React.FC<P> {
+  return function WrappedComponent(props: P) {
+    return (
+      <Suspense fallback={null}>
+        <Component {...props} />
+      </Suspense>
     );
+  };
 }
 
 export default LoadWrapperUtils;
